@@ -1,0 +1,22 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { on } from 'events';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<p>Welcome to my playground, notebook and space to dump things on. Because the <a href="https://www.youtube.com/watch?v=_cZC67wXUTs">internet _IS_ a big truck</a>.</p>
+			<p>Want to get in touch? Send a mail to <a href="mailto:hi@tijmen.gg">hi@tijmen.gg</a>.</p>
+		</main>
+		<Footer />
+	</body>
+</html>
